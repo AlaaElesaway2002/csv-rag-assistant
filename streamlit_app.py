@@ -598,11 +598,11 @@ with st.sidebar:
     if embeddings_available:
         retriever_options += ["Embeddings", "Hybrid"]
     else:
-        st.warning(f"Embeddings/Hybrid disabled this session.\n\nReason: `{embedding_error}`", icon="⚠️")
+        st.caption("Embeddings/Hybrid unavailable this session — TF-IDF / BM25 still work.")
     if chroma_available:
         retriever_options += ["Chroma (Vector DB)"]
     elif embeddings_available:
-        st.warning(f"Chroma disabled this session.\n\nReason: `{chroma_error}`", icon="⚠️")
+        st.caption("Chroma vector store unavailable this session.")
     retriever = st.radio("Method", retriever_options, index=len(retriever_options) - 1, label_visibility="collapsed")
 
     alpha = 0.6
