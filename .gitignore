@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+
+# Streamlit secrets -- DO NOT COMMIT
+# The real key lives in secrets.toml; the .example file is the safe template.
+.streamlit/secrets.toml
+
+# Local tooling state (not part of the project)
+.claude/
+.playwright-mcp/
+
+# Local Chroma store (created at runtime by 05_create_chroma_store.py)
+chroma_store/
+.chroma/
+
+# Build / packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test / scratch
+.pytest_cache/
+.cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# Logs / local output
+*.log
+
+# Bundled ZIP from earlier handin (rebuilt on demand)
+rag_project_refactored.zip
+
+# Playwright / MCP screenshots saved during UI testing
+chat-final.png
+chat-result.png
+*.playwright.png

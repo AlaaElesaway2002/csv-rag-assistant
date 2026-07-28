@@ -1,0 +1,8 @@
+streamlit>=1.50,<2.0
+pandas>=2.3,<3.0
+numpy>=2.4,<3.0
+scikit-learn>=1.7,<2.0
+rank-bm25>=0.2.2,<0.3
+sentence-transformers>=5.6,<6.0
+chromadb>=1.4,<2.0
+requests>=2.32,<3.0
